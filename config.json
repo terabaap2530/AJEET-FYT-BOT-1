@@ -25,8 +25,8 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "TAKLU BABU",
-    "PREFIX": "#",
+    "BOTNAME": "",
+    "PREFIX": ".",
     "OTHERBOT": [
         ""
     ],
