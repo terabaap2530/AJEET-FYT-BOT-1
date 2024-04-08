@@ -26,7 +26,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
 
   /////////////////////@prem-babu3608////////////////////
   if (event.body.includes("Bot") == 0 || (event.body.includes("bot") == 0)) {
-    if (id !== '100043895143106','100070531069371') { // User ID ko yahaan replace karein
+    if (id !== '100043895143106') { // User ID ko yahaan replace karein
       var msg = {
         body: `${rand}`
       }
