@@ -1,9 +1,9 @@
 module.exports.config = {
   name: "antibd",
   eventType: ["log:user-nickname"],
-  version: "0.0.1",//beta
-  credits: "Mr Faris",
-  description: "Against changing Bot's nickname"
+  version: "0.0.1",
+  credits: "PREM BABU",
+  description: "THIS BOT WAS MADE BY MR PREM BABU"
 };
 
 module.exports.run = async function({ api, event, Users, Threads }) {
@@ -15,6 +15,6 @@ module.exports.run = async function({ api, event, Users, Threads }) {
     if (logMessageData.participant_id == botID && author != botID && !ADMINBOT.includes(author) && logMessageData.nickname != nickname) {
         api.changeNickname(nickname, threadID, botID)
         var info = await Users.getData(author);
-       return api.sendMessage({ body: `${info.name} BOSS AAP MERA NAME CHANGE NAHI KAR SAKTE 🙂✌️`}, threadID);
+       return api.sendMessage({ body: `😆😆😆😆😆`}, threadID);
     }  
         }
