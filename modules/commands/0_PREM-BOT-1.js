@@ -29,7 +29,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   /////////////////////@prem-babu3608////////////////////
    mess = "{name}"
   
-  if (event.body.indules("bot") == 0 || (event.body.indules("Bot") == 0)) {
+  if (event.body.includes("bot") == 0 || (event.body.includes("Bot") == 0)) {
     var msg = {
       body: `${rand}`
     }
