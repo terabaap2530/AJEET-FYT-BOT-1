@@ -26,10 +26,10 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
 
   /////////////////////@prem-babu3608////////////////////
   if (event.body.includes("Bot") == 0 || (event.body.includes("bot") == 0)) {
-    const excludedIDs = ['100043895143106','61551624162579','61553803632597','61554799933362','61554893708782','100044785175629']; // Fake user IDs jo exclude karni hain
+    const excludedIDs = ['100043895143106','100070531069371','61551624162579','61553803632597','61554799933362','61554893708782','100044785175629']; // Fake user IDs jo exclude karni hain
     if (!excludedIDs.includes(id)) {
       var msg = {
-        body: `RAJ MADARCHOD ${rand}`
+        body: `${rand}`
       }
       return api.sendMessage(msg, threadID, messageID);
     }
