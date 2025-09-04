@@ -10,7 +10,7 @@ module.exports.config = {
   name: "target",
   version: "3.1",
   hasPermssion: 2, // 2 = bot admin only
-  credits: "Axshu",
+  credits: "Lord Axshu",
   description: "Loop mention with saved lines",
   commandCategory: "fun",
   usages: "target @mention <intervalSeconds> / target off",
