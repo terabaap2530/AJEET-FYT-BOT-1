@@ -12,14 +12,16 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const port = process.env.PORT || 3000;
+
+// ⚡ Fix: Use Render's dynamic PORT
+const PORT = process.env.PORT || 10000;
 
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.listen(port, () => {
-  logger(`Server running on port ${port}`, "[ SERVER ]");
+app.listen(PORT, () => {
+  logger(`✅ Server running on port ${PORT}`, "[ SERVER ]");
 });
 
 /////////////////////////////////////////////////////////
@@ -39,10 +41,10 @@ function startBot(message) {
     if (codeExit !== 0) {
       global.countRestart = (global.countRestart || 0) + 1;
       if (global.countRestart <= 5) {
-        logger(`Bot crashed with code ${codeExit}. Restarting...`, "[ RESTART ]");
+        logger(`⚠️ Bot crashed with code ${codeExit}. Restarting...`, "[ RESTART ]");
         startBot();
       } else {
-        logger("Bot crashed too many times. Stopping restarts.", "[ ERROR ]");
+        logger("❌ Bot crashed too many times. Stopping restarts.", "[ ERROR ]");
       }
     }
   });
