@@ -21,7 +21,7 @@ module.exports.config = {
   name: "nicklock",
   version: "3.0.0",
   hasPermssion: 2,
-  credits: "Prem Babu + Modified by GPT",
+  credits: "Lord Axshu",
   description: "Lock/Unlock nicknames in group or for specific users",
   commandCategory: "group",
   usages: "nicklock on [name] / off / @tag [name] / status",
