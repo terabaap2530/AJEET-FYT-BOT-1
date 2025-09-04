@@ -4,7 +4,7 @@
   "description": "A simple Facebook Messenger Bot made by 𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭.",
   "main": "Priyansh.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node priyansh.js",
     "login": "node login",
     "test": "node --trace-warnings --use_strict --async-stack-traces mirai",
     "postinstall": "npm rebuild better-sqlite3 --build-from-source || echo 'better-sqlite3 skipped'"
